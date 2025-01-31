@@ -1,0 +1,20 @@
+{% extends 'base.html' %}
+
+{% block content %}
+    <div id="title">{% block title %} Мапа острову Ашика {% endblock %}</div>
+
+    <div>
+    <img id="Ashika_img" src="/static/img/ashika_map.png" alt="Ashika map" usemap="#Ashika">
+
+    <map name="Ashika">
+        {% for id, details_dict in data_areas.items() %}
+            {% set tip = 'Назва:  ' + details_dict['name'] + '\n' %}
+            {% if details_dict['type'] == 'Stronghold' %}
+                {% set tip = tip + 'Входи:  ' + details_dict['enters']|string + '\nСкрині: ' + details_dict['n']|string + '\n' + details_dict['info'] %}
+            {% endif %}
+            <area id="{{ id }}" shape="poly" href="" coords="{{ details_dict['coordinates'] }}" alt="{{ id }}" title="{{ tip }}"  >
+        {% endfor %}
+    </map>
+
+    </div>
+{% endblock %}

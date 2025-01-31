@@ -1,0 +1,55 @@
+{
+  "Comms vest":         {
+                        "Description": "Попереджає про ворожих виконавців поруч (100м)\nЗбільшує тривалість дії всіх видів БПЛА (+вежі, +міні)",
+                        "Ingredients":          {
+                                                  "Hard drive": 2,
+                                                  "Battery": 2,
+                                                  "Soothing hand cream": 1
+                                                }
+                        },
+
+  "Medic vest":         {
+                        "Description": "Швидше підняття членів команди при пораненні, їх реанімація, а також застосування самореанімації",
+                        "Ingredients":          {
+                                                  "Bandage": 3,
+                                                  "Liquor": 1,
+                                                  "Watch": 1
+                                                }
+                        },
+
+  "Stealth vest":       {
+                        "Description": "Невидимість на радіовежах, БПЛА, портативних радарах, датчиках серцебиття.\nПроте гарно видно при активації МБПЛА",
+                        "Ingredients":          {
+                                                  "Electrical components": 2,
+                                                  "Comic book": 1,
+                                                  "Game console": 1
+                                                }
+                        },
+
+  "Tempered vest":      {
+                        "Description": "Має 2 пластини, але поглинає пошкодження як і з 3",
+                        "Ingredients":          {
+                                                  "Classified documents": 1,
+                                                  "Sensitive documents": 1,
+                                                  "Documents": 2
+                                                }
+                        },
+
+  "Scavenger backpack": {
+                        "Description": "Максимум в 11 комірок (на 2 більше ніж у великому) за рахунок відсутності слота для зброї",
+                        "Ingredients":          {
+                                                  "Battery": 1,
+                                                  "Canned food": 1,
+                                                  "Gun cleaning oil": 2
+                                                }
+                        },
+
+  "Secure backpack":    {
+                        "Description": "Має розмір як малий рюкзак, але зберігає ВСІ предмети як при евакуації, так і при смерті\n(при смерті втрачається сам)",
+                        "Ingredients":          {
+                                                  "Electric drill": 1,
+                                                  "Gas can": 1,
+                                                  "Gold skull": 1
+                                                }
+                        }
+}

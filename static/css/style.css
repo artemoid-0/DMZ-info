@@ -1,0 +1,101 @@
+#title {
+    font-family: 'Rubik 80s Fade', cursive;
+    color: white;
+    margin: auto;
+    width: fit-content;
+    font-size: 40px;
+    padding: 10px;
+    background-color: RGBA(79, 38, 140, 0.4);
+    border-radius: 15px;
+}
+
+.item_element {
+    /*min-width: 12em;*/
+    outline: 2px solid white;
+    background-color: RGBA(128, 128, 128, 0.5);
+}
+
+#item_list {
+
+
+}
+
+#recipes_list {
+
+}
+
+.recipe_img {
+    border: 4px solid transparent;
+    margin-top: 4px;
+}
+
+.item_img {
+    border: 4px solid transparent;
+    margin-top: 4px;
+}
+
+.item_img:hover {
+    border: 4px solid red;
+}
+
+body {
+    background-image: url("/static/img/background.jpg");
+    background-attachment: fixed;
+    height: 100%;
+}
+
+
+
+.flex-container {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.discord_icon {
+    background: url('/static/ico/discord.ico');
+
+    height: 20px;
+    width: 20px;
+    display: inline-block;
+    box-sizing: border-box;
+}
+
+.item_p {
+    margin-left: 0;
+    padding: 0;
+    color: white;
+}
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100vh;
+
+}
+
+#recipes-items-parent {
+      align-content: flex-start;
+  align-items: flex-start;
+}
+
+
+#main_container_on_page {
+    padding-bottom: 10px;
+}
+
+footer {
+}
+
+.accordion-button {
+    background-color: RGBA(79, 38, 140, 0.8);
+    color: white;
+}
+
+#Ashika_img {
+    min-height: 1073px;
+    min-width: 1073px;
+}
+
+
+

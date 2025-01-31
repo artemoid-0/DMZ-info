@@ -1,0 +1,67 @@
+{
+  "Farm_stronghold":          {
+                                "type": "Stronghold",
+                                "name": "Цитадель на фермах",
+                                "coordinates": [204, 337, 229, 300, 253, 315, 228, 352],
+                                "n": 0,
+                                "enters": 0,
+                                "info": ""
+                              },
+  "Hotels_stronghold":        {
+                                "type": "Stronghold",
+                                "name": "Цитадель в багатоповерхівці",
+                                "coordinates": [389, 298, 405, 287, 417, 310, 399, 316],
+                                "n": 4,
+                                "enters": 3,
+                                "info": "В сусідній будівлі - аналогічна,\nале безкоштовна цитадель"
+                              },
+  "Residential_stronghold":   {
+                                "type": "Stronghold",
+                                "name": "Цитадель в резиденції",
+                                "coordinates": [849, 342, 854, 334, 861, 330, 870, 349, 860, 355],
+                                "n": 0,
+                                "enters": 0,
+                                "info": ""
+                              },
+  "Power_Plant_stronghold":   {
+                                "type": "Stronghold",
+                                "name": "Цитадель \"Power Plant\"",
+                                "coordinates": [480, 397, 496, 369, 509, 369, 518, 397, 518, 516, 480, 416],
+                                "n": 0,
+                                "enters": 5,
+                                "info": "Один із входів - підвали з боку насосної станції"
+                              },
+  "Tsuki_stronghold":         {
+                                "type": "Stronghold",
+                                "name": "Цитадель біля Tsuki Castle",
+                                "coordinates": [784, 451, 784, 448, 813, 471, 815, 481, 794, 488],
+                                "n": 0,
+                                "enters": 0,
+                                "info": ""
+                              },
+  "Hotel_stronghold":         {
+                                "type": "Stronghold",
+                                "name": "Цитадель в готелі",
+                                "coordinates": [435, 631, 456, 628, 461, 659, 441, 663],
+                                "n": 0,
+                                "enters": 0,
+                                "info": ""
+                              },
+  "Port_stronghold":          {
+                                "type": "Stronghold",
+                                "name": "Цитадель в порті",
+                                "coordinates": [851, 698, 877, 684, 883, 693, 857, 709],
+                                "n": 0,
+                                "enters": 0,
+                                "info": ""
+                              },
+  "Beach_club_stronghold":    {
+                                "type": "Stronghold",
+                                "name": "Цитадель на пляжі",
+                                "coordinates": [351, 839, 394, 831, 399, 861, 357, 870],
+                                "n": 0,
+                                "enters": 0,
+                                "info": ""
+                              }
+}
+

@@ -1,0 +1,80 @@
+        <p>
+            <b>{{item_name}} <br></b>
+        {{item_price}} <br>
+        </p>
+
+
+
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+
+
+ <div class="container row" id="page_body">
+        <div class="container col" id="recipes_list">
+            {% set temp_dict = {} %}
+            {% for recipe_result, required_items_dict in data_recipes.items() %}
+            {{ temp_dict.update([(recipe_result, required_items_dict)]) or '' }}
+                {% if temp_dict|length == 2 %}
+                           <div class="row">
+                               {% for temp_result, temp_required_items_dict in temp_dict.items() %}
+                               <div class="col result_element">
+                                    <img src="{{ 'static/img/recipes/' + temp_result + '.jpg'}}" class="result_img" alt="{{ temp_result }}"><br>
+                               </div>
+                               {% endfor %}
+                           </div>
+                    {{ temp_dict.clear() or ''}}
+                {% endif %}
+            {% endfor %}
+        </div>
+
+
+        <div class="container col" id="item_list">
+            {% set temp_dict = {} %}
+            {% for item_name, item_price in data_items.items() %}
+                {{ temp_dict.update([(item_name, item_price)]) or '' }}
+                {% if temp_dict|length == 4 %}
+                           <div class="row">
+                               {% for temp_name, temp_price in temp_dict.items() %}
+                               <div class="col item_element">
+                                    <img src="{{ 'static/img/items/' + temp_name + '_bg.png'}}" class="item_img" alt="{{ temp_name }}"><br>
+                                    <b>{{ temp_name }}<br></b>
+                                    {{ temp_price }}$ <br>
+                               </div>
+                               {% endfor %}
+                           </div>
+                    {{ temp_dict.clear() or ''}}
+                {% endif %}
+            {% endfor %}
+            {% if temp_dict %}
+                    <div class="row">
+                        {% for temp_name, temp_price in temp_dict.items() %}
+                               <div class="col item_element">
+                                    <img src="{{ 'static/img/items/' + temp_name + '_bg.png'}}" class="item_img" alt="{{ temp_name }}"><br>
+                                    <b>{{ temp_name }}<br></b>
+                                    {{ temp_price }}$ <br>
+                               </div>
+                        {% endfor %}
+                    </div>
+            {% endif %}
+        </div>
+
+    </div>
+
+
+
+
+
+  "":                         {
+                                "type": "",
+                                "name": "",
+                                "coordinates": [],
+                                "n": 0,
+                                "enters": 0,
+                                "info": ""
+                              }
+
+}

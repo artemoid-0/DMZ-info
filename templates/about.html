@@ -1,0 +1,123 @@
+{% extends 'base.html' %}
+
+{% block content %}
+    <style>
+        p {
+            color: white;
+        }
+        h1, h2 {
+            color: blueviolet;
+        }
+
+        .row {
+            background-color: RGBA(255, 255, 255, 0.6);
+        }
+
+        #first {
+            border-radius: 10px;
+        }
+
+        #second {
+            border-radius: 10px 10px 0 0;
+        }
+
+        #third {
+            border-radius: 0 0 10px 10px;
+        }
+
+    </style>
+
+
+    <div id="title">{% block title %} Про нас {% endblock %}</div>
+
+    <main>
+    <div class="row" id="first" style="margin-top: 15px">
+        <div class="col" style="margin: auto">
+            <h1>Автор сайту: Міканов Артем</h1>
+            <p style="font-size: 1em">Сайт був створений в рамках виконання курсової роботи з дисципліни "Веб-програмування та веб-дизайн"</p>
+
+            <div class="mb-5">
+                <a href="https://www.victoria.lviv.ua" class="btn btn-primary btn-lg px-4">Сайт дисципліни</a>
+            </div>
+        </div>
+
+        <div class="col">
+            <img src="/static/img/wise_mystical_tree.jpg" style="max-width: 90vw; margin-top: 10px; border-radius: 15%; border: 4px inset yellow">
+            <p style="text-align: center">Поштова скринька: <a href="mailto:artem.mikanov.kn.2021@lpnu.ua">artem.mikanov.kn.2021@lpnu.ua</a>.</p>
+        </div>
+    </div>
+    <hr class="col-3 col-md-2 mb-5">
+
+    <div class="row" id="second">
+      <div class="col">
+        <h2>Корисні посилання</h2>
+        <p>Тут ви можете знайти корисні посилання, пов'язані з нашим університетом "Львівська політехніка":</p>
+        <ul class="list-unstyled ps-0">
+          <li>
+            <a class="icon-link mb-1" href="https://lpnu.ua/ikni" rel="noopener" target="_blank">
+              Офіційний сайт інституту
+            </a>
+          </li>
+          <li>
+            <a class="icon-link mb-1" href="https://t.me/pbikni" rel="noopener" target="_blank">
+              Неофіційний телеграм-канал інституту
+            </a>
+          </li>
+          <li>
+            <a href="https://twitter.com/LvPolytechnic?ref_src=twsrc%5Etfw" class="twitter-follow-button" data-show-count="false">Follow @LvPolytechnic</a><script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+          </li>
+        </ul>
+      </div>
+
+      <div class="col">
+        <h2>Корисні сайти</h2>
+        <p>Сервіси, інформація яких була дуже корисною протягом виконання роботи по створенню сайту</p>
+        <ul class="list-unstyled ps-0">
+          <li>
+            <a class="icon-link mb-1" href="https://getbootstrap.com">
+              Bootstrap - зручна бібліотека шаблонів
+            </a>
+          </li>
+          <li>
+            <a class="icon-link mb-1" href="https://developer.mozilla.org/en-US/docs/Web">
+              Mozilla Developer Network - багато документації по вебу
+            </a>
+          </li>
+          <li>
+            <a class="icon-link mb-1" href="https://stackoverflow.com">
+              Stack overflow - куди ж без нього :)
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+
+
+
+
+
+
+        <div class="row" id="third" style="padding: 10px">
+            <div class="col">
+                <h2>Де я навчаюсь</h2>
+                <iframe width="100%" height="75%" style="min-height: 326px" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2573.3285638699917!2d24.009343243861586!3d49.83628361731115!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x473add79af0e4d9d%3A0x3210a9f2a457fd4e!2z0JrQvtGA0L_Rg9GBIOKEliA0INCd0KMgItCb0J8iLCDQstGD0LvQuNGG0Y8g0JzQuNGC0YDQvtC_0L7Qu9C40YLQsCDQkNC90LTRgNC10Y8sIDMsINCb0YzQstGW0LIsINCb0YzQstGW0LLRgdGM0LrQsCDQvtCx0LvQsNGB0YLRjCwgNzkwMDA!5e0!3m2!1sru!2sua!4v1679853769840!5m2!1sru!2sua" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+
+            <div class="col">
+                <h2>Про кафедру САПР</h2>
+                <ul class="icon-list ps-0">
+                  <iframe width="580" height="326" style="max-width: 90vw" src="https://www.youtube.com/embed/plVmAmQaNpc" title="Кафедра САП (трейлер)" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                </ul>
+            </div>
+        </div>
+
+    </main>
+
+
+
+
+<script>
+</script>
+{% endblock %}
+
